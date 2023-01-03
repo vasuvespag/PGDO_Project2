@@ -32,6 +32,7 @@ public class JUnitDemo {
 
 	@After
 	public void tearDown() throws Exception {
+		System.out.println("Inside After Block");
 		driver.quit();
 	}
 
