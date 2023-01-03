@@ -27,6 +27,7 @@ public class JUnitDemo {
 		driver.manage().window().maximize();
 		driver.get("http://adactinhotelapp.com");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		System.out.println("Testing the git pull through cron job");
 	}
 
 	@After
