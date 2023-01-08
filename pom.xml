@@ -7,7 +7,7 @@
   	<properties>
 		<java.version>11</java.version>
 	</properties>
-
+ 
   
   <dependencies>
 
@@ -47,6 +47,7 @@
 </dependencies>
 
 <build>
+	<finalName>PGDOProject2</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -69,6 +70,11 @@
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.0.2</version>
 			</plugin>
+			<plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+ <version>3.0.0-M7</version>
+ </plugin>
 		</plugins>
 	</build>
 
