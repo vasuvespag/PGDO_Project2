@@ -6,8 +6,8 @@ node {
     def dockerhubaccountid = "vasuvespag"
 	
     // reference to maven
-    // ** NOTE: This 'maven-3.8.7' Maven tool must be configured in the Jenkins Global Configuration.   
-    def mvnHome = tool 'maven-3.8.7'
+    // ** NOTE: This 'maven-3.6.3' Maven tool must be configured in the Jenkins Global Configuration.   
+    def mvnHome = tool 'maven-3.6.3'
 
     // holds reference to docker image
     def dockerImage
@@ -18,9 +18,9 @@ node {
       // Get some code from a GitHub repository
       git url:'https://github.com/vasuvespag/PGDO_Project2.git',branch:'master' //update your repo
       // Get the Maven tool.
-      // ** NOTE: This 'maven-3.8.7' Maven tool must be configured
+      // ** NOTE: This 'maven-3.6.3' Maven tool must be configured
       // **       in the global configuration.           
-      mvnHome = tool 'maven-3.8.7'
+      mvnHome = tool 'maven-3.6.3'
     }    
   
     stage('Build Project') {
@@ -51,7 +51,7 @@ node {
     stage('Deploy Docker Image with new changes'){
 	        
 	    //start container with the remote image
-	  sh "docker run --name devopsexample -d -p 2222:2222 ${dockerhubaccountid}/${application}:${env.BUILD_NUMBER}"  
+	  sh "docker run --name devopsexample -d -p 8080:8080 ${dockerhubaccountid}/${application}:${env.BUILD_NUMBER}"  
 	  
     }
 	
