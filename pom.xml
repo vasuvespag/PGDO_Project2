@@ -47,7 +47,7 @@
 </dependencies>
 
 <build>
-	<finalName>PGDOProject2</finalName>
+	<finalName>PGDO_Project2</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
