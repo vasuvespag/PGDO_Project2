@@ -51,6 +51,7 @@ public class JUnitDemo {
 		String errorMsg = driver.findElement(By.xpath("//*[@id=\'login_form\']/table/tbody/tr[5]/td[2]/div/b")).getText();
 		//System.out.println(errorMsg);
 		assertEquals(actualErrorMsg,errorMsg);
+		System.out.println("Asserting from Test Method");
 		/*
 		 * new
 		 * Select(driver.findElement(By.id("location"))).selectByVisibleText("Sydney");
