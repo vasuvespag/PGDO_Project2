@@ -38,6 +38,7 @@ public class JUnitDemo {
 
 	@Test
 	public void test() {
+		System.out.println("Just adding a statement for demonstration");
 		WebElement uname = driver.findElement(By.id("username"));
 		uname.click();
 		uname.clear();
