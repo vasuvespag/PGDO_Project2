@@ -41,6 +41,7 @@ public class JUnitDemo {
 	public void test() {
 		System.out.println("Just adding a statement for demonstration");
 		System.out.println("Adding this for Mar Batch1 SDET LTIM");
+		System.out.println("Just adding a statement for demonstration again");
 		WebElement uname = driver.findElement(By.id("username"));
 		uname.click();
 		uname.clear();
